@@ -19,4 +19,11 @@ public class CourseController {
 
         return new ResponseEntity<>("OK",HttpStatus.OK);
     }
+
+//    @GetMapping(path = "/api/course/findAllCourses", produces = "application/json")
+//    public HttpEntity<List<CourseDto>> findAllCourses(){
+//        List<CourseDto> allCourses = courseService.findAllCourses();
+//
+//        return new ResponseEntity<>(allCourses, HttpStatus.OK);
+//    }
 }
