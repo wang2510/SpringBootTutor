@@ -14,7 +14,7 @@ import java.util.List;
 import static junit.framework.TestCase.assertTrue;
 import static org.mockito.BDDMockito.given;
 
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(MockitoJUnitRunner.Silent.class)
 public class CourseServiceUnitTest {
     @Mock
     private CourseService courseService;
