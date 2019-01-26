@@ -13,9 +13,4 @@ public class CourseDto {
 
     private String courseName;
 
-    private String courseLocation;
-
-    private String courseContent;
-
-    private long teacherId;
 }

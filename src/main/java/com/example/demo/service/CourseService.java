@@ -20,4 +20,10 @@ public class CourseService {
 
         return courseRepository.findAllClasses();
     }
+
+    public List<Course> searchByCourseName(String input){
+
+        return courseRepository.findCourseByName(input);
+    }
+
 }

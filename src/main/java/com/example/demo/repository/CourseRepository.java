@@ -26,6 +26,21 @@ public class CourseRepository {
 
 
     public List<Course> findAllClasses(){
+        //链接数据库
+        //返回数据库的信息
         return  courses;
+    }
+
+    public List<Course> findAllCourse(String searchByCourseName){
+
+        return new ArrayList<Course>();
+    }
+
+    public List<Course> findCourseByName(String courseName) {
+        if(courseName.equals("Java_I")) {
+            return courses;
+        }
+
+        return new ArrayList<Course>();
     }
 }
