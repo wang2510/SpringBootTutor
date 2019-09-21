@@ -8,10 +8,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -30,7 +27,6 @@ public class CourseController {
 
         return new ResponseEntity<>(allCourses,HttpStatus.OK); // 我返回结果给你
     }
-
 //    @GetMapping(path = "/api/course/findAllCourses", produces = "application/json")
 //    public HttpEntity<List<CourseDto>> findAllCourses(){
 //        List<CourseDto> allCourses = courseService.findAllCourses();
@@ -45,6 +41,8 @@ public class CourseController {
 
         return new ResponseEntity(findedCourse, HttpStatus.OK);
     }
-}
+
+ }
 
 // 增加一个课程/删除一个课程/更新一个课程信息
+

@@ -4,13 +4,12 @@ import com.example.demo.modal.Course;
 import com.example.demo.modal.Instructor;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Repository
 public class CourseRepository {
     List<Course> courses = new ArrayList<>();
+
 
     // constructor
     public CourseRepository() {
@@ -29,8 +28,13 @@ public class CourseRepository {
                 .timeFrame("8am-10am")
                 .build();
 
+
         courses.add(javaOne);
+        courses.add(two);
     }
+
+
+
 
 
     public List<Course> findAllClasses(){
@@ -51,4 +55,6 @@ public class CourseRepository {
 
         return new ArrayList<Course>();
     }
+
+
 }
