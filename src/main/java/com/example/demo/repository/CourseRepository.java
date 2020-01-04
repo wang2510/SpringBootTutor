@@ -15,14 +15,14 @@ public class CourseRepository {
     // constructor
     public CourseRepository() {
         Course javaOne = Course.builder()
-                .className("Java I")
+                .className("Java_I")
                 .instructor(new Instructor("Steve", "Jobs", "Phd", "TownHall201"))
                 .startDate(new Date("8/1/2018"))
                 .endDate(new Date("12/24/2018"))
                 .timeFrame("8am-10am")
                 .build();
         Course two= Course.builder()
-                .className("Java II")
+                .className("Java_II")
                 .instructor(new Instructor("Steve", "Jobs", "Phd", "TownHall201"))
                 .startDate(new Date("8/1/2018"))
                 .endDate(new Date("12/24/2018"))
@@ -30,6 +30,7 @@ public class CourseRepository {
                 .build();
 
         courses.add(javaOne);
+        courses.add(two);
     }
 
 
