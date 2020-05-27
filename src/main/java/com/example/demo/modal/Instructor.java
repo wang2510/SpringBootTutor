@@ -14,4 +14,5 @@ public class Instructor {
     private String lastName;
     private String title;
     private String office;
+
 }

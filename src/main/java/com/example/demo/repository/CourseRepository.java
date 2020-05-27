@@ -15,7 +15,7 @@ public class CourseRepository {
     public CourseRepository() {
         Course javaOne = Course.builder()
                 .className("Java I")
-                .instructor(new Instructor("Steve", "Jobs", "Phd", "TownHall201"))
+                .instructor(new Instructor("Steve","Jobs", "Phd", "TownHall201"))
                 .startDate(new Date("8/1/2018"))
                 .endDate(new Date("12/24/2018"))
                 .timeFrame("8am-10am")
@@ -42,5 +42,18 @@ public class CourseRepository {
         }
 
         return new ArrayList<Course>();
+    }
+
+    public void addCourse(String courseName){
+        Course course = Course.builder()
+                .className(courseName)
+                .instructor(new Instructor("Steve","Jobs", "Phd", "TownHall201"))
+                .startDate(new Date("8/1/2018"))
+                .endDate(new Date("12/24/2018"))
+                .timeFrame("8am-10am")
+                .build();
+
+        courses.add(course);
+
     }
 }
